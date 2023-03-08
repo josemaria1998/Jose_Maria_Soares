@@ -1,0 +1,32 @@
+.conteiner{
+    width: auto;
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'footer';
+    grid-template-columns: auto;
+    grid-template-rows: 100px 50px auto 100px;
+}
+.img-header{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+header{
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+}
+nav{
+    border: solid 1px black;
+}
+main{
+    border: solid 1px black;
+}
+footer{
+    border: solid 1px black;
+}
