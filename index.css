@@ -1,3 +1,7 @@
+body{
+    background-image: url(imagens/floresta-agencia-brasil.jpg);
+    background-size: cover;
+}
 .conteiner{
     width: auto;
     height: auto;
@@ -19,14 +23,20 @@
 header{
     display: flex;
     align-items: center;
-    border: solid 1px black;
 }
 nav{
-    border: solid 1px black;
+    display: flex;
 }
 main{
-    border: solid 1px black;
+    display: flex;
 }
 footer{
-    border: solid 1px black;
+    display: flex;
+}
+.menu{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: chartreuse;
+    color: black;
 }
