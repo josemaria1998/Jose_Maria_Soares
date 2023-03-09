@@ -1,5 +1,10 @@
+*{
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+}
 body{
-    background-image: url(imagens/floresta-agencia-brasil.jpg);
+    background-image: url(imagens/Desenvolvimento-de-projetos-e-montagem-de-placas-eletronicas-conheca-nossos-diferencias-1024x681.png);
     background-size: cover;
 }
 .conteiner{
@@ -19,24 +24,36 @@ body{
     width: 100px;
     height: 100px;
     margin: 10px;
+    border-radius: 100%;
+}
+.tex-header{
+    text-align: center;
 }
 header{
+    grid-area: header;
     display: flex;
     align-items: center;
+    justify-items: center;
 }
 nav{
+    grid-area: nav;
     display: flex;
 }
 main{
+    grid-area: main;
     display: flex;
 }
 footer{
+    grid-area: footer;
     display: flex;
 }
 .menu{
     margin: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: chartreuse;
-    color: black;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 150px;
+    text-align: center;
 }
