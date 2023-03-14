@@ -6,7 +6,17 @@
     <title>Jose Maria Soares</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src='main.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet'> 
+    <script>
+        function clickMenu(){
+            if(menu1.style.display == 'block'){
+                menu1.style.display = 'none'
+            }
+            else{
+                menu1.style.display = 'block'
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="conteiner">
@@ -15,9 +25,24 @@
             <h1 class="tex-header">Jose Maria Soares</h1>
         </header>
         <nav>
-            <h2 class="menu">PERFIL</h2>
-            <h2 class="menu">INTERESSES</h2>
-            <h2 class="menu">FORMAÇÃO</h2>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <div id="menu1" class="menu1">
+                    <div>
+                        <a href="perfil.html" rel="pagina de perfil">
+                            <h2 class="menu">PERFIL</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a  href="interesses.html" rel="pagina de interesses">
+                            <h2 class="menu">INTERESSES</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a  href="formacao.html" rel="pagina de formacao">
+                            <h2 class="menu">FORMAÇÃO</h2>
+                        </a>
+                    </div> 
+            </div>
         </nav>
         <main>
 

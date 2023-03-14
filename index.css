@@ -1,11 +1,12 @@
 *{
-    margin: 5;
-    padding: 5;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
     background-image: url(imagens/Desenvolvimento-de-projetos-e-montagem-de-placas-eletronicas-conheca-nossos-diferencias-1024x681.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 .conteiner{
     width: auto;
@@ -37,7 +38,12 @@ header{
 }
 nav{
     grid-area: nav;
+}
+.menu1{
     display: flex;
+}
+i#burguer{
+    display: none;
 }
 main{
     grid-area: main;
@@ -56,4 +62,19 @@ footer{
     height: 30px;
     width: 150px;
     text-align: center;
+}
+@media (max-width: 800px) {
+    .menu1{
+        display: none;
+        flex-direction: column;
+    }
+    i#burguer{
+        background-color: rgb(58, 58, 58);
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        margin: 10px;
+    }
 }
